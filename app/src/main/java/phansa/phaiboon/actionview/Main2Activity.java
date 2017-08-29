@@ -22,5 +22,6 @@ public class Main2Activity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
 
 
+
     } //Main method
 }//Main Class
