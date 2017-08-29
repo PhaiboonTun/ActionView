@@ -16,11 +16,23 @@
 
     <!--logo-->
     <ImageView
-
+        android:id="@+id/imvLogo"
         android:src="@drawable/logo"
         android:layout_centerInParent="true"
         android:layout_width="@dimen/logo"
         android:layout_height="@dimen/logo" />
 
+    <!--Process Bar-->
+    <ProgressBar
+        android:background="#1effffff"
+        android:layout_below="@id/imvLogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="@dimen/logo"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="1"/>
 
 </RelativeLayout>
