@@ -64,10 +64,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void myIntentToAcitonview() {
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(urlString));
+//        Intent intent = new Intent(Intent.ACTION_VIEW);
+//        intent.setData(Uri.parse(urlString));
+//        startActivity(intent);
+//        finish();
+
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        intent.putExtra("URL", urlString);
         startActivity(intent);
+
         finish();
+
     }
 
 }//mani Class
